@@ -1,5 +1,12 @@
 @extends("layouts.public")
 
 @section("content")
-<h1>Ciao</h1>
+
+<ul>
+    @foreach ($trains as $train  )
+    <li> {{$train->Azienda}}</li>
+    @endforeach
+
+</ul>
+    
 @endsection
